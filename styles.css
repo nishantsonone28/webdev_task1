@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cfc8c8;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #a065c0;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Team Section */
+.team {
+    margin-bottom: 60px;
+}
+
+.team h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a065c0;
+}
+
+/* Team Layout */
+.team-section h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #a065c0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping of items in rows */
+}
+
+/* Team Member */
+.team-member {
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+}
+
+/* Circle Image */
+.team-member img {
+    width: 150px;
+    height: 150px;
+    background: color #e0e0e0;;
+    border-radius: 50%; /* Creates circular images */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Team Member Name & Role */
+.team-member p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Make the First Paragraph (Name) Bold */
+.team-member p:first-of-type {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column; /* Stack team members vertically on small screens */
+        align-items: center;
+    }
+}
